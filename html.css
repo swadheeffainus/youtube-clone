@@ -183,8 +183,32 @@ img
     color: #fff;
 }
 
-.sidebar-item
+.sidebar-items
 {
     display: flex;
     flex-direction: column;
 }
+
+.sidebar-item
+{
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.sidebar-item:hover
+{
+    background-color: #4c4c4c;
+}
+
+.sidebar-item i
+{
+    margin-right: 24px;
+}
+
+/* .sidebar-item a
+{
+    margin-left: 24px;
+} */
