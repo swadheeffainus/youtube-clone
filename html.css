@@ -295,12 +295,39 @@ img
     transition-delay: .05s;
 }
 
+.video-content-cover:hover
+{
+    transform: translateY(60px);
+    z-index: 999;
+}
+
+.video-content-cover:nth-child(4n+4):hover
+{
+    transform: translate(-30px, 60px);
+    z-index: 999;
+}
+
 .video-content
 {
     margin-bottom: 25px;
     position: relative;
     transition: .5s;
     width: 100%;
+}
+
+.video-content:hover
+{
+    transform: scale(1.1);
+    z-index: 5;
+    /* position: absolute; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    background-color: #202020;
+    /* width: 100px; */
+}
+.video-content:hover .video-details
+{
+    background-color: #202020;
+    padding: 10px;
 }
 
 .video-box
@@ -320,9 +347,106 @@ img
     overflow: hidden;
 }
 
+.video-content:hover .channel-logo
+{
+    min-width: 25px;
+    height: 25px;
+}
+
 .video-details
 {
     display: flex;
     color: #fff;
     padding-top: 12px;
 }
+
+.detail
+{
+    margin-left: 12px;
+}
+
+.title
+{
+    font-size: .9rem;
+}
+
+.video-content:hover .title
+{
+    font-size: .7rem;
+}
+
+.channel-name
+{
+    font-size: .8rem;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.views-upload
+{
+    display: flex;
+    font-size: .8rem;
+    color: #aaa;
+}
+
+.upload
+{
+    margin-left: 5px;
+}
+.hidden-content
+{
+    display: none;
+    padding: 5px 10px;
+}
+
+.video-content:hover .hidden-content
+{
+    display: block;
+}
+
+.btn
+{
+    padding: 5px 0;
+    color: #aaa;
+    text-transform: uppercase;
+    width: 100%;
+    background-color: #373737;
+    text-align: center;
+    margin: 5px 0;
+    font-size: .6rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn i 
+{
+    font-size: .7rem;
+    margin-right: 5px;
+    color: #aaa;
+}
+
+/* responisive */
+
+/* @media (max-width: 1200px;)
+{
+    .sidebar
+    {
+        width: 70px;
+        overflow-x: hidden;
+    }
+    .more 
+    {
+        display: none;
+    }
+    .content
+    {
+        width: calc(100vh-70px);
+    }
+}
+
+@media (max-width: 1050px;)
+{
+    grid-template-columns: repeat(3, 1fr);
+} */
